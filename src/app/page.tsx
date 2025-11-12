@@ -5,7 +5,15 @@ import AboutSection from "../Sections/about";
 import SkillsSection from "../Sections/skills";
 
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Portfolio({ }: { children: React.ReactNode }) {
   useScrollEffects();
-  return <main>{children}</main>;
+  return (
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-1">
+        <HeroSection/>
+        <AboutSection/>
+        <SkillsSection/>
+      </main>
+    </div>
+  );
 }
