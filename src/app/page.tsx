@@ -3,7 +3,8 @@ import { useScrollEffects } from "./Hooks/use-scroll-effects";
 import HeroSection from "../Sections/hero";
 import AboutSection from "../Sections/about";
 import SkillsSection from "../Sections/skills";
-
+import PortfolioSection from "../Sections/portfolio";
+import ContactSection from "../Sections/contact";
 
 export default function Portfolio({ }: { children: React.ReactNode }) {
   useScrollEffects();
@@ -13,6 +14,8 @@ export default function Portfolio({ }: { children: React.ReactNode }) {
         <HeroSection/>
         <AboutSection/>
         <SkillsSection/>
+        <PortfolioSection/>
+        <ContactSection/>
       </main>
     </div>
   );

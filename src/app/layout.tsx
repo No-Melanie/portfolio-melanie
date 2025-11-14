@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from 'next'; 
 import { Inter } from 'next/font/google';
 import './globals.css'; 
+import { Header } from './FooternHeader/header';
+import { Footer } from './FooternHeader/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Alex Chen - Frontend Developer & UI/UX Designer',
+  title: 'Melanie Rocha - Frontend Developer & UI/UX Designer',
 };
 
 export const viewport: Viewport = {
@@ -29,7 +31,9 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,45 +1,49 @@
 "use client" ;
+import SkillCard from "../app/Components/SkillCards";
 
-    const SkillsSection = () => { 
-    return (      
-      <section id="skills" className="skills">
-        <div className="container">
-          <div className="section-title fade-in">
-            <h2>My Skills</h2>
-          </div>
-          <div className="skills-grid">
-            <div className="skill-card fade-in">
-              <div className="skill-icon">
-                <i className="fas fa-code"></i>
-              </div>
-              <h3>Frontend Development</h3>
-              <p>HTML5, CSS3, JavaScript, React, Vue.js, TypeScript, Next.js</p>
-            </div>
-            <div className="skill-card fade-in">
-              <div className="skill-icon">
-                <i className="fas fa-paint-brush"></i>
-              </div>
-              <h3>UI/UX Design</h3>
-              <p>Figma, Adobe XD, Sketch, Prototyping, User Research, Wireframing</p>
-            </div>
-            <div className="skill-card fade-in">
-              <div className="skill-icon">
-                <i className="fas fa-mobile-alt"></i>
-              </div>
-              <h3>Responsive Design</h3>
-              <p>Mobile-First Approach, CSS Grid, Flexbox, Media Queries</p>
-            </div>
-            <div className="skill-card fade-in">
-              <div className="skill-icon">
-                <i className="fas fa-rocket"></i>
-              </div>
-              <h3>Performance</h3>
-              <p>Optimization, Lazy Loading, Code Splitting, SEO Best Practices</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
+
+export default function SkillsSection() {
+  
+  const skillsData = [
+    {
+      icon: "fas fa-code",
+      title: "Frontend Development",
+      description: "HTML5, CSS3, JavaScript, React, Vue.js, TypeScript, Next.js"
+    },
+    {
+      icon: "fas fa-paint-brush",
+      title: "UI/UX Design",
+      description: "Figma, Adobe XD, Sketch, Prototyping, User Research, Wireframing"
+    },
+    {
+      icon: "fas fa-mobile-alt",
+      title: "Responsive Design",
+      description: "Mobile-First Approach, CSS Grid, Flexbox, Media Queries"
+    },
+    {
+      icon: "fas fa-rocket",
+      title: "Performance",
+      description: "Optimization, Lazy Loading, Code Splitting, SEO Best Practices"
+    }
+  ];
+
+  return (
+    <div className="container">
+      <div className="section-title fade-in">
+        <h2>My Skills</h2>
+      </div>
+      
+      <div className="skills-grid">
+        {skillsData.map((skill, index) => (
+          <SkillCard 
+            key={index} // O React precisa de uma chave única para cada item
+            icon={skill.icon}
+            title={skill.title}
+            description={skill.description}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default SkillsSection;

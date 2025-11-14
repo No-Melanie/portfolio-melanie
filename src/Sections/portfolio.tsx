@@ -1,5 +1,8 @@
 import Image from "next/image"
 
+const PortfolioSection = () => {
+
+  return (
     <section id="portfolio" className="portfolio">
         <div className="container">
             <div className="section-title fade-in">
@@ -18,7 +21,9 @@ import Image from "next/image"
                         src="https://placehold.co/600x400"
                         width={600}
                         height={400} 
-                        alt="Ocean E-commerce Platform"/>
+                        alt="Ocean E-commerce Platform"
+                        unoptimized
+                        />
                         <div className="portfolio-overlay">
                             <div className="portfolio-links">
                                 <a href="#" className="portfolio-link"><i className="fas fa-search-plus"></i></a>
@@ -42,7 +47,8 @@ import Image from "next/image"
                         src="https://placehold.co/600x400" 
                         width={600}
                         height={400} 
-                        alt="Cyan Weather App"/>
+                        alt="Cyan Weather App"
+                        unoptimized/>
                         <div className="portfolio-overlay">
                             <div className="portfolio-links">
                                 <a href="#" className="portfolio-link"><i className="fas fa-search-plus"></i></a>
@@ -66,7 +72,8 @@ import Image from "next/image"
                         src="https://placehold.co/600x400" 
                         width={600}
                         height={400} 
-                        alt="Ocean Banking Dashboard"/>
+                        alt="Ocean Banking Dashboard"
+                        unoptimized/>
                         <div className="portfolio-overlay">
                             <div className="portfolio-links">
                                 <a href="#" className="portfolio-link"><i className="fas fa-search-plus"></i></a>
@@ -90,7 +97,8 @@ import Image from "next/image"
                         src="https://placehold.co/600x400" 
                         width={600}
                         height={400} 
-                        alt="Cyan Travel Agency"/>
+                        alt="Cyan Travel Agency"
+                        unoptimized/>
                         <div className="portfolio-overlay">
                             <div className="portfolio-links">
                                 <a href="#" className="portfolio-link"><i className="fas fa-search-plus"></i></a>
@@ -114,7 +122,9 @@ import Image from "next/image"
                         src="https://placehold.co/600x400" 
                         width={600}
                         height={400} 
-                        alt="Ocean Fitness Tracker"/>
+                        alt="Ocean Fitness Tracker"
+                        unoptimized
+                        />
                         <div className="portfolio-overlay">
                             <div className="portfolio-links">
                                 <a href="#" className="portfolio-link"><i className="fas fa-search-plus"></i></a>
@@ -138,7 +148,9 @@ import Image from "next/image"
                         src="https://placehold.co/600x400" 
                         width={600}
                         height={400} 
-                        alt="Cyan Task Manager"/>
+                        alt="Cyan Task Manager"
+                        unoptimized
+                        />
                         <div className="portfolio-overlay">
                             <div className="portfolio-links">
                                 <a href="#" className="portfolio-link"><i className="fas fa-search-plus"></i></a>
@@ -159,3 +171,6 @@ import Image from "next/image"
             </div>
         </div>
     </section>
+  );
+}
+export default PortfolioSection;

@@ -19,7 +19,7 @@ const ContactSection = () => {
               </div>
               <div className="contact-details">
                 <h3>Location</h3>
-                <p>San Francisco, CA</p>
+                <p>São Paulo, SP</p>
               </div>
             </div>
 
@@ -29,7 +29,7 @@ const ContactSection = () => {
               </div>
               <div className="contact-details">
                 <h3>Email</h3>
-                <p>alex.chen@example.com</p>
+                <p>melaniegr1902@gmail.com</p>
               </div>
             </div>
 
@@ -39,7 +39,7 @@ const ContactSection = () => {
               </div>
               <div className="contact-details">
                 <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
+                <p>+55 (14) 98209-3873</p>
               </div>
             </div>
           </div>

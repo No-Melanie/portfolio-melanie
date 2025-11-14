@@ -8,7 +8,7 @@ export function Header() {
         <nav>
           <a href="#" className="logo">
             <i className="fas fa-water"></i>
-            Alex Chen
+            Melanie Rocha
           </a>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
